@@ -87,9 +87,34 @@
         }
         /* #endregion */
         /* #region FORMS  */
-        .selection-form form input {
-            background-color: black;
-            color: white;
+        .selection-form form fieldset input,
+        .selection-form form fieldset label,
+        .selection-form form fieldset textarea {
+            display: block;
+            width: 100%;
+        }
+        .selection-form > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #dddddd;
+        }
+        .selection-form div div{
+            line-height: 30px;
+            padding: 0.5rem 1.1rem;
+            background-color: #cccccc;
+        }
+        .selection-form form fieldset {
+            display: flex;
+            flex-direction: column;
+           gap: 0.3rem;
+           
+        }
+        .selection-form form fieldset textarea {
+            display: block;
+            padding: 0.5rem 1rem;
+            resize: none;
         }
         /* PSEUDO ELEMENTS */
         .selection-form form input::placeholder {
