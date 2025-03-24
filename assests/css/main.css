@@ -51,14 +51,6 @@
         section header ~ h3:nth-child(3n) {
             color: green;
         }
-        .selection-form form input {
-            background-color: black;
-            color: white;
-        }
-        /* PSEUDO ELEMENTS */
-        .selection-form form input::placeholder{
-            color: lime;
-        }
         /* #endregion */
         /* #region DROP DOWN MENU */
         .dropdown {
@@ -92,5 +84,21 @@
         /* #region LOGIN REGISTER */
         .auth-container {
             margin: 20px;
+        }
+        /* #endregion */
+        /* #region FORMS  */
+        .selection-form form input {
+            background-color: black;
+            color: white;
+        }
+        /* PSEUDO ELEMENTS */
+        .selection-form form input::placeholder {
+            color: lime;
+        }
+        .selection-form form input:invalid {
+            border: 2px solid red;
+        }
+        .selection-form form input:valid {
+            border: 2px solid green;
         }
         /* #endregion */
