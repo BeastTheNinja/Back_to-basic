@@ -6,10 +6,10 @@
             text-align: center;
         }
         footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
+            background-color: #333333;
+            color: #fffcfc;
+            padding: 0;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -25,9 +25,40 @@
             border: none;
             cursor: pointer;
         }
-        /* main{} */
-        /* section{} */
-        /* article{} */
+        h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+            padding: 0;
+        }
+        section:last-of-type h3{
+            max-width: 500px;
+            font-size: 2.1rem;
+            text-align: center;
+            margin: 0.5rem auto;
+            padding: 2rem;
+            background-color: black;
+            color: white;
+            background-color: gray;
+            box-shadow: 0 5px 9px 5px #00000033;
+            font-size: 1.5rem;
+        }
+        /* PSUEDOCLASSES */
+         section header ~ h3:nth-child(odd) {
+            color: red;
+        }
+         section header ~ h3:nth-child(even) {
+            color: blue;
+        }
+        section header ~ h3:nth-child(3n) {
+            color: green;
+        }
+        .selection-form form input {
+            background-color: black;
+            color: white;
+        }
+        /* PSEUDO ELEMENTS */
+        .selection-form form input::placeholder{
+            color: lime;
+        }
         /* #endregion */
         /* #region DROP DOWN MENU */
         .dropdown {
