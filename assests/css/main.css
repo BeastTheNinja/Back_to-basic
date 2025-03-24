@@ -117,13 +117,4 @@
             resize: none;
         }
         /* PSEUDO ELEMENTS */
-        .selection-form form input::placeholder {
-            color: lime;
-        }
-        .selection-form form input:invalid {
-            border: 2px solid red;
-        }
-        .selection-form form input:valid {
-            border: 2px solid green;
-        }
         /* #endregion */
